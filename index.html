@@ -1,0 +1,178 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>即刻AI | 结构主义赛博 AI 产品品牌官网</title>
+    <link rel="stylesheet" href="css/style.css?v=logo-jike-1" />
+    <link rel="stylesheet" href="css/animations.css?v=logo-jike-1" />
+    <link rel="stylesheet" href="css/responsive.css?v=logo-jike-1" />
+  </head>
+  <body>
+    <canvas id="fieldCanvas" aria-hidden="true"></canvas>
+    <div class="cursor-glow" aria-hidden="true"></div>
+
+    <header class="site-header">
+      <a class="brand-mark" href="#hero" aria-label="回到首页">
+        <img src="assets/brand/logo.png" alt="即刻AI Logo" />
+        <span>JIKE AI</span>
+      </a>
+      <nav class="top-nav" aria-label="主导航">
+        <a href="#about">品牌</a>
+        <a href="#mentors">导师</a>
+        <a href="#courses">课程</a>
+        <a href="#cases">案例</a>
+        <a href="#contact">合作</a>
+      </nav>
+      <button class="edit-toggle" id="editToggle" type="button">编辑模式</button>
+      <button class="menu-toggle" id="menuToggle" type="button" aria-label="打开导航">
+        <span></span><span></span>
+      </button>
+    </header>
+
+    <aside class="rail-nav" id="railNav" aria-label="章节导航"></aside>
+
+    <main>
+      <section class="hero-section section" id="hero" data-label="首页">
+        <div class="hero-bg" aria-hidden="true"></div>
+        <div class="hero-grid">
+          <div class="hero-copy">
+            <p class="eyebrow editable-text">JIKE AI PRODUCT SYSTEM / 2026</p>
+            <h1 class="editable-text">即刻进入<br />AI影像现场</h1>
+            <p class="hero-lead editable-text">
+              一个面向 AI 影像学习、内容生产、企业培训与商业影像项目的产品化能力平台。
+            </p>
+            <div class="hero-actions">
+              <a class="primary-link" href="#about">进入产品系统</a>
+              <a class="ghost-link" href="#mentors">查看能力网络</a>
+            </div>
+          </div>
+          <div class="hero-panel" aria-label="品牌结构数据">
+            <span>AI PRODUCT FIELD</span>
+            <strong>AI CAPABILITY SYSTEM</strong>
+            <p class="editable-text">课程产品 / 导师网络 / 案例系统 / 合作转化</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section about-section" id="about" data-label="品牌">
+        <div class="section-head">
+          <p class="section-index">01 / BRAND POSITION</p>
+          <h2 class="editable-text">用产品化课程、导师网络与项目案例，把 AI 影像能力带到真实业务场景。</h2>
+        </div>
+        <div class="about-layout">
+          <div class="statement">
+            <p class="editable-text">
+              即刻AI围绕 AI 影像创作方法与行业实践，持续推出系统化课程与实战训练营，涵盖 AI 漫剧、AI 宣传片、AI 短片、AI 动画、AIMV 等方向，并同步开展高校合作与教育培训。
+            </p>
+          </div>
+          <div class="capability-grid" id="capabilityGrid"></div>
+        </div>
+      </section>
+
+      <section class="section content-section" id="content" data-label="内容">
+        <div class="section-head compact">
+          <p class="section-index">02 / CONTENT MATRIX</p>
+          <h2 class="editable-text">内容栏目、行业观察与模型测评，构成即刻AI持续更新的知识产品入口。</h2>
+        </div>
+        <div class="content-orbit" id="contentMatrix"></div>
+      </section>
+
+      <section class="section mentors-section" id="mentors" data-label="导师">
+        <div class="section-head">
+          <p class="section-index">03 / MENTOR NETWORK</p>
+          <h2 class="editable-text">核心导师与合作创作者，组成面向 AI 产品体验与实战交付的能力网络。</h2>
+        </div>
+        <div class="mentor-feature" id="mentorFeature"></div>
+        <div class="mentor-wall" id="mentorWall"></div>
+      </section>
+
+      <section class="section courses-section" id="courses" data-label="课程">
+        <div class="section-head compact">
+          <p class="section-index">04 / COURSE SYSTEM</p>
+          <h2 class="editable-text">从引流体验课到训练营、私教课，形成 AI 影像学习进阶路径。</h2>
+        </div>
+        <div class="course-path" id="coursePath"></div>
+        <div class="poster-strip" id="posterStrip"></div>
+      </section>
+
+      <section class="section cases-section" id="cases" data-label="案例">
+        <div class="section-head">
+          <p class="section-index">05 / CREATIVE CASES</p>
+          <h2 class="editable-text">以商业影像、教育培训与内容案例，说明即刻AI如何把能力转化为项目结果。</h2>
+        </div>
+        <div class="case-filters" id="caseFilters"></div>
+        <div class="case-gallery" id="caseGallery"></div>
+      </section>
+
+      <section class="section partners-section" id="partners" data-label="伙伴">
+        <div class="section-head compact">
+          <p class="section-index">06 / PARTNERS</p>
+          <h2 class="editable-text">合作伙伴、平台资源与行业网络共同构成品牌外部接口。</h2>
+        </div>
+        <div class="partner-wall" id="partnerWall"></div>
+      </section>
+
+      <section class="section contact-section" id="contact" data-label="合作">
+        <div class="contact-copy">
+          <p class="section-index">07 / CONTACT</p>
+          <h2 class="editable-text">把 AI 影像创作、课程培训与行业资源，连接成可落地的合作项目。</h2>
+          <p class="editable-text">
+            面向课程合作、企业培训、内容共创、AI商业影像制作与品牌传播项目开放合作。
+          </p>
+        </div>
+        <div class="founder-profile">
+          <div class="founder-portrait image-editable" data-placeholder="主理人照片">
+            <img src="assets/brand/founder-portrait.png" alt="即刻AI品牌创始人孟浪" />
+            <div class="image-tools">
+              <label>替换<input type="file" accept="image/*" /></label>
+              <button type="button">删除</button>
+            </div>
+          </div>
+          <div class="founder-info">
+            <span class="card-label">FOUNDER / JIKE AI</span>
+            <h3 class="editable-text">孟浪</h3>
+            <p class="editable-text">即刻AI品牌创始人，电影记者、影评人、独立策展人，拥有 10 年影视文娱与数字内容行业经验。</p>
+            <div class="tag-row">
+              <span>品牌IP运营</span><span>影像活动策划</span><span>新媒体孵化</span><span>项目管理</span>
+            </div>
+          </div>
+        </div>
+        <div class="cooperation-grid">
+          <article>
+            <span class="card-label">CONTENT & MEDIA</span>
+            <h3 class="editable-text">新媒体孵化与管理</h3>
+            <p class="editable-text">DOCO热纪录、奇爱电影、益起映创、幕味儿、娱理、导演帮、烹小鲜、X放映、在场映画、大映、幕课 Cinema Course、即刻AI等。</p>
+          </article>
+          <article>
+            <span class="card-label">PROJECT OPERATION</span>
+            <h3 class="editable-text">项目管理与运营</h3>
+            <p class="editable-text">中国电影导演协会、青葱计划、金鸡手机电影计划、黄渤海影展、亚欧青年影展、超数实验室等。</p>
+          </article>
+          <article class="contact-card">
+            <span class="card-label">WECHAT / CONTACT</span>
+            <div class="contact-code image-editable" data-placeholder="联系方式">
+              <img src="assets/contact/contact.png" alt="联系方式二维码" />
+              <div class="image-tools">
+                <label>替换<input type="file" accept="image/*" /></label>
+                <button type="button">删除</button>
+              </div>
+            </div>
+            <p class="editable-text">扫码沟通课程、企业培训、内容共创与 AI 商业影像合作。</p>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <div class="modal" id="modal" aria-hidden="true">
+      <div class="modal-backdrop" data-close-modal></div>
+      <article class="modal-panel" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+        <button class="modal-close" type="button" data-close-modal>×</button>
+        <div class="modal-body" id="modalBody"></div>
+      </article>
+    </div>
+
+    <script src="js/data.js?v=logo-jike-1"></script>
+    <script src="js/main.js?v=logo-jike-1"></script>
+  </body>
+</html>

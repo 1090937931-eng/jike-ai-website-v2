@@ -1,0 +1,236 @@
+@media (max-width: 1020px) {
+  .top-nav {
+    display: none;
+  }
+
+  .menu-toggle {
+    display: block;
+  }
+
+  .site-header.nav-open .top-nav {
+    position: absolute;
+    left: 16px;
+    right: 16px;
+    top: 72px;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 0;
+    padding: 12px;
+    background: rgba(5, 8, 13, 0.95);
+    border: 1px solid var(--line);
+  }
+
+  .site-header.nav-open .top-nav a {
+    padding: 10px;
+    text-align: center;
+  }
+
+  .hero-grid,
+  .about-layout,
+  .contact-section,
+  .cooperation-grid,
+  .poster-modal-layout,
+  .mentor-console,
+  .mentor-detail-panel {
+    grid-template-columns: 1fr;
+  }
+
+  .section-head {
+    grid-template-columns: 1fr;
+    gap: 12px;
+  }
+
+  .capability-grid,
+  .content-orbit,
+  .mentor-feature,
+  .course-path,
+  .mentor-wall {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .case-card {
+    grid-template-columns: 1fr;
+  }
+
+  .case-split-grid,
+  .modal-split-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .case-media-row {
+    padding: 0 24px 24px;
+  }
+
+  .case-course .image-editable {
+    aspect-ratio: 16 / 8.6;
+  }
+
+  .partner-wall {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+
+  .mentor-console-list {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .mentor-console-item {
+    grid-template-columns: 1fr;
+  }
+
+  .mentor-console-item img,
+  .mentor-console-item span,
+  .mentor-console-item small {
+    grid-column: auto;
+  }
+
+  .mentor-console-item img {
+    width: 100%;
+    height: 120px;
+  }
+
+  .case-browser {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .rail-nav {
+    display: none;
+  }
+
+  .hero-panel {
+    max-width: 420px;
+  }
+}
+
+@media (max-width: 720px) {
+  .site-header {
+    grid-template-columns: auto 1fr auto;
+    padding: 12px 14px;
+  }
+
+  .brand-mark span {
+    display: none;
+  }
+
+  .edit-toggle {
+    padding: 9px 10px;
+  }
+
+  .site-header.nav-open .top-nav {
+    grid-template-columns: 1fr;
+  }
+
+  .section {
+    min-height: auto;
+    padding: 84px 16px;
+  }
+
+  .hero-section {
+    min-height: 100vh;
+  }
+
+  .hero-copy h1 {
+    font-size: clamp(46px, 16vw, 68px);
+  }
+
+  .hero-actions {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .capability-grid,
+  .content-orbit,
+  .mentor-feature,
+  .mentor-wall,
+  .course-path,
+  .case-gallery,
+  .partner-wall,
+  .modal-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .mentor-console-list,
+  .case-browser {
+    grid-template-columns: 1fr;
+  }
+
+  .mentor-detail-panel {
+    min-height: auto;
+  }
+
+  .mentor-detail-visual img {
+    max-height: 360px;
+  }
+
+  .poster-focus {
+    padding: 22px;
+    min-height: 260px;
+  }
+
+  .mentor-mini-card {
+    grid-template-columns: 88px minmax(0, 1fr);
+  }
+
+  .mentor-mini-card .image-editable {
+    min-height: 126px;
+  }
+
+  .case-copy {
+    padding: 22px;
+  }
+
+  .case-media-row {
+    padding: 0 18px 22px;
+  }
+
+  .case-card .image-editable {
+    width: 74vw;
+  }
+
+  .content-card:nth-child(even),
+  .mentor-card:nth-child(2),
+  .mentor-card:nth-child(3) {
+    transform: none;
+  }
+
+  .content-card,
+  .mentor-card,
+  .course-step {
+    min-height: auto;
+  }
+
+  .mentor-card {
+    grid-template-rows: 280px 1fr;
+  }
+
+  .poster-strip {
+    grid-auto-columns: minmax(210px, 76vw);
+  }
+
+  .poster-card {
+    flex-basis: min(76vw, 310px);
+  }
+
+  .founder-profile {
+    grid-template-columns: 1fr;
+  }
+
+  .founder-portrait {
+    min-height: 360px;
+  }
+
+  .poster-modal-copy {
+    position: static;
+  }
+
+  .partner-item {
+    aspect-ratio: 2.2 / 1;
+  }
+
+  .modal-body {
+    padding: 8px 18px 24px;
+  }
+
+  .modal-body h3 {
+    font-size: 28px;
+  }
+}

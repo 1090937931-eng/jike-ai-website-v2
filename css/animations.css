@@ -1,0 +1,73 @@
+.glass-card,
+.content-card,
+.mentor-card,
+.course-step,
+.case-card,
+.poster-card,
+.partner-item,
+.mentor-wall-item,
+.mentor-mini-card {
+  transition: transform 0.22s ease, border-color 0.22s ease, box-shadow 0.22s ease;
+}
+
+.glass-card:hover,
+.content-card:hover,
+.mentor-card:hover,
+.course-step:hover,
+.case-card:hover,
+.poster-card:hover,
+.partner-item:hover,
+.mentor-wall-item:hover,
+.mentor-mini-card:hover {
+  transform: translateY(-6px);
+  border-color: rgba(81, 230, 255, 0.45);
+  box-shadow: 0 18px 60px rgba(0, 0, 0, 0.34), 0 0 32px rgba(14, 91, 255, 0.16);
+}
+
+.content-card:nth-child(even):hover {
+  transform: translateY(26px);
+}
+
+.mentor-card:nth-child(2):hover {
+  transform: translateY(36px);
+}
+
+.mentor-card:nth-child(3):hover {
+  transform: translateY(2px);
+}
+
+.poster-card:hover {
+  transform: translateY(-14px) scale(1.08);
+  z-index: 5;
+}
+
+@keyframes scan {
+  0% { transform: translateX(-100%); }
+  100% { transform: translateX(100%); }
+}
+
+.hero-panel::before,
+.glass-card::before,
+.content-card::before,
+.course-step::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 40%;
+  left: 0;
+  background: linear-gradient(90deg, transparent, rgba(255,255,255,0.08), transparent);
+  transform: translateX(-100%);
+  animation: scan 7s ease-in-out infinite;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation: none !important;
+    transition: none !important;
+    scroll-behavior: auto !important;
+  }
+}
